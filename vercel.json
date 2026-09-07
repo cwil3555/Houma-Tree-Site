@@ -1,0 +1,70 @@
+{
+  "framework": null,
+  "buildCommand": null,
+  "installCommand": null,
+  "outputDirectory": null,
+  "trailingSlash": true,
+  "cleanUrls": false,
+  "rewrites": [
+    {
+      "source": "/_astro/(.*)",
+      "destination": "/$1"
+    },
+    {
+      "source": "/about/",
+      "destination": "/about.html"
+    },
+    {
+      "source": "/areas/",
+      "destination": "/areas.html"
+    },
+    {
+      "source": "/areas/bayou-cane/",
+      "destination": "/areas-bayou-cane.html"
+    },
+    {
+      "source": "/areas/gray/",
+      "destination": "/areas-gray.html"
+    },
+    {
+      "source": "/areas/morgan-city/",
+      "destination": "/areas-morgan-city.html"
+    },
+    {
+      "source": "/areas/schriever/",
+      "destination": "/areas-schriever.html"
+    },
+    {
+      "source": "/areas/thibodaux/",
+      "destination": "/areas-thibodaux.html"
+    },
+    {
+      "source": "/contact/",
+      "destination": "/contact.html"
+    },
+    {
+      "source": "/faq/",
+      "destination": "/faq.html"
+    },
+    {
+      "source": "/services/emergency-tree-removal/",
+      "destination": "/services-emergency-tree-removal.html"
+    },
+    {
+      "source": "/services/land-clearing/",
+      "destination": "/services-land-clearing.html"
+    },
+    {
+      "source": "/services/stump-grinding/",
+      "destination": "/services-stump-grinding.html"
+    },
+    {
+      "source": "/services/tree-removal/",
+      "destination": "/services-tree-removal.html"
+    },
+    {
+      "source": "/tree-removal-cost/",
+      "destination": "/tree-removal-cost.html"
+    }
+  ]
+}
