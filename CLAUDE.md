@@ -20,7 +20,7 @@ On 2026-10-25 Cole decided to replace it completely with the reading site. Tree 
 - **K–12 teaching experience**, incl. 5 years teaching ages 4–8 in a school classroom
 - 2 years as an online reading tutor with **Hoot Reading**
 - Homeschooled and taught her own children
-- Student success stories + photo + bio in her words — **still owed** (credentials added 2026-10-25)
+- Student success stories + bio in her words — **still owed** (credentials + photo added 2026-10-25)
 - Brand voice: warm, personal, uses her first name ("Sherri"), no "Ms."
 
 ## Brand + domain
@@ -48,6 +48,9 @@ schedule + get reviews, then raise ~$10 once there's a waitlist.
   No email address is shown on the site (`email` blank in site.json → hidden).
 - `.vercelignore` keeps CLAUDE.md, README.md, src/, outreach/ OFF the public site (until 2026-10-25 Vercel was
   serving CLAUDE.md and src/ publicly because the repo root is the output dir). Keep new internal files in there.
+- Photo: `img/sherri.jpg` + `img/sherri.webp` (640×800, cropped from Cole's selfie upload, metadata stripped). Used in
+  home hero (round on mobile), About intro, og:image (link previews in FB/texts), and schema. Replace both files to swap it.
+- Local preview: `python -m http.server 4180 -d .` (Desktop launch.json config `reading-site` in the sweepmate repo).
 - Old tree URLs 301 to the new pages (vercel.json redirects).
 - Vercel Web Analytics script tag is on every page (needs enabling in the Vercel dashboard).
 - Form asks "How did you hear about us?" — this is the channel-attribution data for lead-gen.
@@ -76,7 +79,7 @@ sale — outreach drives students, the site converts them. Channels, fastest fir
   "additional certifications" bullet and the "Results" section were removed until real details exist.
 
 ## Next steps
-1. Fill real content in src/build.py ABOUT/FAQS: photo, bio in Sherri's words, a Results
+1. Fill real content in src/build.py ABOUT/FAQS: bio in Sherri's words, a Results
    section with student stories (parent permission), actual payment method
 2. Outreach drafts DONE → outreach/2026-10-25_outreach_drafts.md. Before sending: check Sherri's Hoot
    agreement for a non-solicitation clause; Cole + Sherri decide the referral reward; Sherri applies to Outschool.
@@ -111,3 +114,4 @@ sale — outreach drives students, the site converts them. Channels, fastest fir
 - **2026-10-25 (late)** — Compared Outschool / Wyzant / Varsity Tutors (fees, pricing control, off-platform rules).
 - **2026-10-25 (late)** — Added credentials (EBLI, Auburn early-childhood degree, dyslexia experience, K–12) to home,
   about, meta descriptions, outreach drafts; new FAQs "dyslexia?" and "What is EBLI?" (FAQ schema updates automatically).
+- **2026-10-25 (late)** — Added Sherri's photo (home hero, About, og:image, schema); previewed desktop + mobile locally before push.
