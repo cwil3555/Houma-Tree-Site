@@ -15,7 +15,7 @@ On 2026-10-25 Cole decided to replace it completely with the reading site. Tree 
 
 ## About Sherri (use in copy)
 - 30+ years as an educator; **Bachelor's in Early Childhood Education, Auburn University** (degree type B.S./B.A. not confirmed — say "bachelor's")
-- **EBLI-trained** (Evidence-Based Literacy Instruction). Cole wrote "EBLI credentials" — "certified" NOT confirmed, so site says "trained in"
+- **EBLI-trained** (Evidence-Based Literacy Instruction). Cole CONFIRMED 2026-10-25: "trained", NOT certified — never say certified
 - **Experience teaching dyslexic children** (never call her a dyslexia specialist/therapist; FAQ disclaims evaluation)
 - **K–12 teaching experience**, incl. 5 years teaching ages 4–8 in a school classroom
 - 2 years as an online reading tutor with **Hoot Reading**
