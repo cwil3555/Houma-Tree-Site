@@ -44,6 +44,8 @@ schedule + get reviews, then raise ~$10 once there's a waitlist.
   the project is set to Astro and builds fail (`astro: command not found`) without the override.
 - Form: Web3Forms; the access key in site.json emails **Cole** for now (he forwards to Sherri).
   No email address is shown on the site (`email` blank in site.json → hidden).
+- `.vercelignore` keeps CLAUDE.md, README.md, src/, outreach/ OFF the public site (until 2026-10-25 Vercel was
+  serving CLAUDE.md and src/ publicly because the repo root is the output dir). Keep new internal files in there.
 - Old tree URLs 301 to the new pages (vercel.json redirects).
 - Vercel Web Analytics script tag is on every page (needs enabling in the Vercel dashboard).
 - Form asks "How did you hear about us?" — this is the channel-attribution data for lead-gen.
@@ -74,7 +76,8 @@ sale — outreach drives students, the site converts them. Channels, fastest fir
 ## Next steps
 1. Fill real content in src/build.py ABOUT/FAQS: photo, bio in Sherri's words, certifications, a Results
    section with student stories (parent permission), actual payment method
-2. Draft outreach for Cole: past-family email, homeschool FB group post, Outschool listing, GBP listing
+2. Outreach drafts DONE → outreach/2026-10-25_outreach_drafts.md. Before sending: check Sherri's Hoot
+   agreement for a non-solicitation clause; Cole + Sherri decide the referral reward; Sherri applies to Outschool.
 
 ## Gotchas learned
 - Cloud sessions have NO browser access to Cole's machine; GitHub/Vercel work goes through API connectors.
@@ -99,3 +102,5 @@ sale — outreach drives students, the site converts them. Channels, fastest fir
   enabled Vercel Web Analytics (Hobby). Site fully live on the new domain.
 - **2026-10-25 (late)** — Search Console verified + sitemap submitted + homepage indexing requested. Skipped Google
   Business Profile (online-only = ineligible per Google guidelines).
+- **2026-10-25 (late)** — Wrote outreach drafts (past-family email/text, homeschool FB post, Outschool group +
+  1-on-1 listings; Outschool = strictly on-platform). Added .vercelignore after finding CLAUDE.md/src publicly served.
