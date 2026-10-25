@@ -43,12 +43,12 @@ HOME = f"""
 <p class="lead">One-on-one lessons by video call with {E(S["teacher_full"])}, a teacher with <strong>30+ years of experience</strong>.
 Every lesson plan is built around your child, not a script.</p>
 <p>{CTA} <a class="btn btn--ghost" href="/lessons/">See lessons &amp; pricing</a></p>
-<ul class="ticks"><li>Bachelor's in Education</li><li>30+ years teaching</li><li>Former Hoot Reading tutor</li><li>Homeschool teacher</li></ul>
+<ul class="ticks"><li>EBLI-trained reading teacher</li><li>Bachelor's in Early Childhood Education, Auburn</li><li>30+ years as an educator</li><li>Experienced with dyslexic learners</li><li>Homeschool teacher</li></ul>
 </div></section>
 
 <section class="wrap grid3">
 <div class="card"><h3>Early readers (5–8)</h3><p>Letter sounds, phonics, blending and sight words, taught step by step so reading clicks. Five years teaching ages 4–8 in the classroom.</p></div>
-<div class="card"><h3>Struggling or reluctant readers</h3><p>For the child who's behind, guessing at words, or avoids books. We find the gap and fill it, and keep it encouraging.</p></div>
+<div class="card"><h3>Struggling readers &amp; dyslexia</h3><p>For the child who's behind, guessing at words, or avoids books, including children with dyslexia. Explicit, step-by-step EBLI instruction finds the gap and fills it, and keeps it encouraging.</p></div>
 <div class="card"><h3>Comprehension &amp; fluency (9–14)</h3><p>Reading smoothly, understanding what they read, building vocabulary, and keeping up with harder school texts.</p></div>
 </section>
 
@@ -89,9 +89,11 @@ ABOUT = f"""
 <section class="wrap narrow"><h1>Meet {E(S["teacher_full"])}</h1>
 <p class="lead">{E(S["teacher"])} has spent more than 30 years helping children become confident readers — in the classroom, online, and at her own kitchen table homeschooling her kids. Every lesson is one-on-one and built around where your child is today.</p>
 <ul class="ticks ticks--col">
-<li>30+ years of teaching experience</li>
-<li>Bachelor's degree in Education</li>
-<li>5 years teaching ages 4–8 in a school classroom</li>
+<li>30+ years as an educator</li>
+<li>Bachelor's degree in Early Childhood Education from Auburn University</li>
+<li>Trained in EBLI (Evidence-Based Literacy Instruction)</li>
+<li>Experience teaching children with dyslexia</li>
+<li>K–12 teaching experience, including 5 years teaching ages 4–8 in a school classroom</li>
 <li>2 years as an online reading tutor with Hoot Reading</li>
 <li>Homeschooled and taught her own children</li>
 </ul>
@@ -100,6 +102,8 @@ ABOUT = f"""
 
 FAQS = [
     ("What ages do you teach?", "Children from about age 5 up to 13 or 14: from first letter sounds through middle-school reading comprehension."),
+    ("Do you work with children with dyslexia?", f"Yes. {S['teacher']} has experience teaching children with dyslexia and is trained in EBLI (Evidence-Based Literacy Instruction), a structured, explicit approach to teaching reading, spelling, and writing. Lessons are not a medical or psychological evaluation; if you're unsure whether your child has dyslexia, the free assessment is a good first step, and your pediatrician or school can advise on formal testing."),
+    ("What is EBLI?", "EBLI (Evidence-Based Literacy Instruction) is a reading method that teaches the sounds of English and how they're written in a clear, step-by-step way, so children decode words instead of guessing. It works for beginning readers and for older students who are behind."),
     ("How do online lessons work for young kids?", "Lessons are short, interactive, and hands-on: games, shared screens, and real books. Young children usually do great online when the teacher is experienced with them. A parent nearby for the first lesson or two helps."),
     ("What do we need?", "A laptop or tablet with a camera and microphone, a quiet spot, and a reliable internet connection. A phone screen is usually too small."),
     ("Is the assessment really free?", "Yes. It's 20 minutes, there's no obligation, and you'll come away with a clear picture of your child's reading level either way."),
@@ -142,9 +146,9 @@ BIZ_LD = {"@context": "https://schema.org", "@type": "EducationalOrganization", 
 
 PAGES = [
     ("index", f"Online Reading Tutor for Kids Ages 5–14 | {S['brand']}",
-     "Private one-on-one online reading lessons with a teacher of 30+ years. Phonics, struggling readers, comprehension. Free reading assessment.", HOME, BIZ_LD),
+     "Private one-on-one online reading lessons with an EBLI-trained teacher of 30+ years. Phonics, dyslexia and struggling readers, comprehension. Free reading assessment.", HOME, BIZ_LD),
     ("lessons", f"Reading Lessons & Pricing | {S['brand']}", "Online reading lesson options and prices. 30, 45 and 60-minute one-on-one lessons. Free assessment.", LESSONS, None),
-    ("about", f"About {S['teacher']} | {S['brand']}", "30+ years teaching, Bachelor's in Education, former Hoot Reading tutor and homeschool teacher.", ABOUT, None),
+    ("about", f"About {S['teacher']} | {S['brand']}", "EBLI-trained reading teacher with 30+ years as an educator, a bachelor's in Early Childhood Education from Auburn, and experience with dyslexic learners.", ABOUT, None),
     ("faq", f"FAQ | {S['brand']}", "Answers about online reading lessons for kids: ages, equipment, pricing, homeschool.", FAQ, FAQ_LD),
     ("contact", f"Free Reading Assessment | {S['brand']}", "Book a free 20-minute online reading assessment for your child.", CONTACT, None),
 ]
