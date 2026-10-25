@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://houmatreepros.com/sitemap-index.xml
+Sitemap: https://readingwithsherri.com/sitemap.xml
