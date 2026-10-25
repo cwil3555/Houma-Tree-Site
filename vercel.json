@@ -1,9 +1,25 @@
 {
+  "framework": null,
+  "buildCommand": null,
+  "installCommand": null,
+  "outputDirectory": null,
   "cleanUrls": true,
   "trailingSlash": true,
   "redirects": [
-    { "source": "/services/:path*", "destination": "/lessons/", "permanent": true },
-    { "source": "/areas/:path*", "destination": "/", "permanent": true },
-    { "source": "/tree-removal-cost/", "destination": "/lessons/", "permanent": true }
+    {
+      "source": "/services/:path*",
+      "destination": "/lessons/",
+      "permanent": true
+    },
+    {
+      "source": "/areas/:path*",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/tree-removal-cost/",
+      "destination": "/lessons/",
+      "permanent": true
+    }
   ]
 }
