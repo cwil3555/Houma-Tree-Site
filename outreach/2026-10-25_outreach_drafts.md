@@ -33,10 +33,11 @@ Hi {first name},
 I hope you and {child's name} are doing well! I wanted to let you know I've started teaching private
 one-on-one reading lessons online, for kids about 5 to 14.
 
-After 30+ years of teaching (in the classroom, as an online reading tutor, and homeschooling my own
-kids), helping children become confident readers is still my favorite thing to do. Lessons are by video
-call and planned around each child: phonics and early reading, kids who are behind or avoiding books, and
-older students working on fluency and comprehension.
+After 30+ years as an educator (K–12 classrooms, online reading tutoring, and homeschooling my own
+kids), helping children become confident readers is still my favorite thing to do. I'm trained in EBLI
+(Evidence-Based Literacy Instruction) and have experience teaching children with dyslexia. Lessons are by
+video call and planned around each child: phonics and early reading, kids who are behind or avoiding
+books, and older students working on fluency and comprehension.
 
 **Every new student starts with a free 20-minute reading assessment.** I listen to them read and send you
 a short summary of where they are and what would help most. No obligation.
@@ -70,13 +71,15 @@ Add a friendly, real photo of Sherri. Posts with a face get noticed more than te
 
 > **Homeschool mama + reading teacher here, offering free reading assessments 📚**
 >
-> Hi everyone! I'm Sherri. I homeschooled my own kids, and I've been teaching for 30+ years, including
-> 5 years teaching ages 4–8 in a classroom and 2 years as an online reading tutor with Hoot Reading.
+> Hi everyone! I'm Sherri. I homeschooled my own kids, and I've been an educator for 30+ years: K–12
+> classroom teaching, a bachelor's in Early Childhood Education from Auburn, and 2 years as an online
+> reading tutor with Hoot Reading. I'm trained in EBLI (Evidence-Based Literacy Instruction) and have
+> experience working with dyslexic children.
 >
 > I now teach private, one-on-one reading lessons by video call for kids about 5 to 14. Lessons can be
 > your reading curriculum or support the one you already use. I work on:
 > • Letter sounds, phonics, and blending for early readers
-> • Kids who are behind, guessing at words, or avoiding books
+> • Kids who are behind, guessing at words, or avoiding books, including dyslexic learners
 > • Fluency, vocabulary, and comprehension for older readers
 >
 > If you're wondering whether your child is on track, I'm offering a **free 20-minute reading assessment**.
@@ -116,9 +119,10 @@ check the "you earn" number before publishing.
   >
   > Learners can join any week. Each class reviews earlier sounds while adding a new one.
 - **About the teacher:**
-  > Hi, I'm Sherri! I've been teaching for more than 30 years. I have a bachelor's degree in education,
-  > taught ages 4–8 in a school classroom for 5 years, spent 2 years as an online reading tutor, and
-  > homeschooled my own children. Watching a child realize "I can read this!" is my favorite part of
+  > Hi, I'm Sherri! I've been an educator for more than 30 years. I have a bachelor's degree in Early
+  > Childhood Education from Auburn University, K–12 classroom experience, training in EBLI
+  > (Evidence-Based Literacy Instruction), experience teaching children with dyslexia, 2 years as an
+  > online reading tutor, and I homeschooled my own children. Watching a child realize "I can read this!" is my favorite part of
   > teaching.
 - **Learning goals:** Identify letter sounds; blend 3-letter words; read common sight words; build confidence reading aloud.
 - **Supplies:** Paper, pencil, and a few crayons. Optional: a small whiteboard and marker.

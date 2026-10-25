@@ -14,11 +14,13 @@ This repo used to be **Houma Tree Pros** (houmatreepros.com, a rank-and-rent tre
 On 2026-10-25 Cole decided to replace it completely with the reading site. Tree content is gone; ignore it.
 
 ## About Sherri (use in copy)
-- 30+ years teaching experience; Bachelor's in Education
-- 5 years teaching ages 4–8 in a school classroom
+- 30+ years as an educator; **Bachelor's in Early Childhood Education, Auburn University** (degree type B.S./B.A. not confirmed — say "bachelor's")
+- **EBLI-trained** (Evidence-Based Literacy Instruction). Cole wrote "EBLI credentials" — "certified" NOT confirmed, so site says "trained in"
+- **Experience teaching dyslexic children** (never call her a dyslexia specialist/therapist; FAQ disclaims evaluation)
+- **K–12 teaching experience**, incl. 5 years teaching ages 4–8 in a school classroom
 - 2 years as an online reading tutor with **Hoot Reading**
 - Homeschooled and taught her own children
-- Has more certifications + student success stories — **Cole owes specifics** (not yet provided)
+- Student success stories + photo + bio in her words — **still owed** (credentials added 2026-10-25)
 - Brand voice: warm, personal, uses her first name ("Sherri"), no "Ms."
 
 ## Brand + domain
@@ -74,7 +76,7 @@ sale — outreach drives students, the site converts them. Channels, fastest fir
   "additional certifications" bullet and the "Results" section were removed until real details exist.
 
 ## Next steps
-1. Fill real content in src/build.py ABOUT/FAQS: photo, bio in Sherri's words, certifications, a Results
+1. Fill real content in src/build.py ABOUT/FAQS: photo, bio in Sherri's words, a Results
    section with student stories (parent permission), actual payment method
 2. Outreach drafts DONE → outreach/2026-10-25_outreach_drafts.md. Before sending: check Sherri's Hoot
    agreement for a non-solicitation clause; Cole + Sherri decide the referral reward; Sherri applies to Outschool.
@@ -107,3 +109,5 @@ sale — outreach drives students, the site converts them. Channels, fastest fir
 - **2026-10-25 (late)** — Wrote outreach drafts (past-family email/text, homeschool FB post, Outschool group +
   1-on-1 listings; Outschool = strictly on-platform). Added .vercelignore after finding CLAUDE.md/src publicly served.
 - **2026-10-25 (late)** — Compared Outschool / Wyzant / Varsity Tutors (fees, pricing control, off-platform rules).
+- **2026-10-25 (late)** — Added credentials (EBLI, Auburn early-childhood degree, dyslexia experience, K–12) to home,
+  about, meta descriptions, outreach drafts; new FAQs "dyslexia?" and "What is EBLI?" (FAQ schema updates automatically).
