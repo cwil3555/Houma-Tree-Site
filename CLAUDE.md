@@ -23,7 +23,8 @@ On 2026-10-25 Cole decided to replace it completely with the reading site. Tree 
 
 ## Brand + domain
 - Business name: **Reading with Sherri** (Cole chose; dropped "Ms.")
-- Domain: **readingwithsherri.com** — available, $11.25/yr on Vercel, NOT YET BOUGHT (as of 2026-10-25)
+- Domain: **readingwithsherri.com** — BOUGHT 2026-10-25 in Vercel (team cwil3555s-projects, auto-renew on,
+  Vercel nameservers). Not yet attached to the project (see Next steps).
 - Do NOT use "Wilson Reading" in branding — "Wilson Reading System" is a trademarked reading program.
 
 ## Pricing (recommended by Claude, adopted on the site)
@@ -55,24 +56,29 @@ sale — outreach drives students, the site converts them. Channels, fastest fir
 5. Slow/compounding: Google Business Profile, local SEO pages (Houma/Thibodaux), reviews/testimonials
 6. Track: analytics + the "how did you hear" form field
 
-## Current state (2026-10-25)
-- Branch `reading-lessons-site` → **draft PR #2** (https://github.com/cwil3555/Houma-Tree-Site/pull/2),
-  Vercel preview green: https://houmatreepros-site-git-reading-lessons-site-cwil3555s-projects.vercel.app
-- Live production (main) is STILL the old tree site until PR #2 is merged.
+## Current state (2026-10-25, evening)
+- PR #2 MERGED (commit d249a28). Production is the reading site, currently served at houmatreepros.com
+  (verified 200 + new titles on /, /about/, /faq/, /lessons/).
+- No bracket placeholders remain: About intro + FAQ payment answer use neutral launch copy; the
+  "additional certifications" bullet and the "Results" section were removed until real details exist.
+- readingwithsherri.com is bought but NOT yet on the project: the Vercel MCP connector is read-only
+  (403 on add-domain) and there is no Vercel CLI, so it must be done in the dashboard (logged in).
 
 ## Next steps
-1. Cole buys readingwithsherri.com in Vercel (Claude won't charge his card without explicit OK + registrant details)
-2. Claude adds the domain to the Vercel project; redirect houmatreepros.com → new domain
-3. Merge PR #2 → live
-4. Fill placeholders still in [brackets]: About (photo, bio in her words, certifications, student results),
-   FAQ (payment method — Venmo/Zelle/invoice?)
-5. Enable Vercel Analytics; set up Google Business Profile + Search Console (submit sitemap.xml)
-6. Draft outreach for Cole: past-family email, homeschool FB group post, Outschool listing, GBP listing
+1. Vercel dashboard → houmatreepros-site → Settings → Domains: add readingwithsherri.com (production) +
+   www.readingwithsherri.com (308 → apex); then edit houmatreepros.com + www to 308-redirect → readingwithsherri.com
+2. Enable Vercel Web Analytics (dashboard → Analytics → Enable)
+3. Fill real content in src/build.py ABOUT/FAQS: photo, bio in Sherri's words, certifications, a Results
+   section with student stories (parent permission), actual payment method
+4. Google Business Profile + Search Console (add readingwithsherri.com property, submit sitemap.xml)
+5. Draft outreach for Cole: past-family email, homeschool FB group post, Outschool listing, GBP listing
 
 ## Gotchas learned
 - Cloud sessions have NO browser access to Cole's machine; GitHub/Vercel work goes through API connectors.
   For browser-driving, Cole must run Claude on his own computer (Desktop app or `claude remote-control`).
 - Push access needed the Claude GitHub App installed on `cwil3555` (done 2026-10-25).
+- On Windows run the build as `PYTHONUTF8=1 python src/build.py` (the 📖 emoji crashes cp1252 otherwise).
+- Vercel MCP connector here is READ-ONLY for project settings (403 on domain writes) — use the dashboard.
 - Repo was renamed/moved to `cwil3555/Houma-Tree-Site` (capitalized); use that remote URL.
 
 ## Progress log
@@ -80,3 +86,6 @@ sale — outreach drives students, the site converts them. Channels, fastest fir
   (replaced all tree pages); fixed Vercel Astro build failure; set name (Sherri Wilson), brand
   (Reading with Sherri), domain target (readingwithsherri.com), pricing; opened draft PR #2. Waiting on
   domain purchase + merge + Sherri's bio/cert details.
+- **2026-10-25 (later)** — Cole bought readingwithsherri.com. Replaced remaining placeholders with neutral
+  launch copy, merged PR #2 → reading site live (on houmatreepros.com for now). Domain attach + old-domain
+  redirect + analytics blocked on Vercel dashboard login.
