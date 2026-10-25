@@ -17,6 +17,7 @@ NAV = [("Lessons & Pricing", "/lessons/"), ("About", "/about/"), ("FAQ", "/faq/"
 def page(slug, title, desc, body, schema=None):
     url = S["domain"] + ("/" if slug == "index" else f"/{slug}/")
     nav = "".join(f'<a href="{h}">{E(t)}</a>' for t, h in NAV)
+    mail = f' · <a href="mailto:{E(S["email"])}">{E(S["email"])}</a>' if S["email"] else ""
     ld = f'<script type="application/ld+json">{json.dumps(schema)}</script>' if schema else ""
     return f"""<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -29,7 +30,7 @@ def page(slug, title, desc, body, schema=None):
 <header class="top"><div class="wrap top__in"><a class="logo" href="/">📖 {E(S["brand"])}</a><nav>{nav}</nav></div></header>
 <main>{body}</main>
 <footer class="foot"><div class="wrap"><p><strong>{E(S["brand"])}</strong> · Private online reading lessons for ages 5–14 with {E(S["teacher"])}.</p>
-<p>{E(S["booking_note"])} · <a href="mailto:{E(S["email"])}">{E(S["email"])}</a></p>
+<p>{E(S["booking_note"])}{mail}</p>
 <p class="small">&copy; 2026 {E(S["brand"])}</p></div></footer></body></html>"""
 
 
@@ -85,7 +86,7 @@ LESSONS = f"""
 """
 
 ABOUT = f"""
-<section class="wrap narrow"><h1>Meet {E(S["teacher"])}</h1>
+<section class="wrap narrow"><h1>Meet {E(S["teacher_full"])}</h1>
 <p class="lead">[Photo + 2–3 sentences in her own words: why she loves teaching kids to read.]</p>
 <ul class="ticks ticks--col">
 <li>30+ years of teaching experience</li>
@@ -131,16 +132,16 @@ CONTACT = f"""
 <option>Nextdoor</option><option>Outschool / tutoring site</option><option>Other</option></select></label>
 <button class="btn" type="submit">Request my free assessment</button>
 <p id="note" role="status" aria-live="polite"></p></form>
-<p class="small">Prefer email? <a href="mailto:{E(S["email"])}">{E(S["email"])}</a></p></section>
+</section>
 <script>
 document.getElementById('f').addEventListener('submit',async e=>{{e.preventDefault();const f=e.target,n=document.getElementById('note'),b=f.querySelector('button');
 b.disabled=true;b.textContent='Sending...';try{{const r=await(await fetch('https://api.web3forms.com/submit',{{method:'POST',headers:{{'Content-Type':'application/json',Accept:'application/json'}},body:JSON.stringify(Object.fromEntries(new FormData(f)))}})).json();
-if(!r.success)throw 0;n.textContent="Thank you! We'll be in touch within one business day.";f.reset();}}catch(_){{n.textContent='Something went wrong. Please email us instead.';}}finally{{b.disabled=false;b.textContent='Request my free assessment';}}}});
+if(!r.success)throw 0;n.textContent="Thank you! We'll be in touch within one business day.";f.reset();}}catch(_){{n.textContent='Something went wrong. Please try again in a minute.';}}finally{{b.disabled=false;b.textContent='Request my free assessment';}}}});
 </script>
 """
 
 BIZ_LD = {"@context": "https://schema.org", "@type": "EducationalOrganization", "name": S["brand"], "url": S["domain"],
-          "description": "Private one-on-one online reading lessons for children ages 5-14.", "email": S["email"]}
+          "description": "Private one-on-one online reading lessons for children ages 5-14.", "founder": {"@type": "Person", "name": S["teacher_full"]}}
 
 PAGES = [
     ("index", f"Online Reading Tutor for Kids Ages 5–14 | {S['brand']}",

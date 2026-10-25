@@ -9,7 +9,7 @@
 <header class="top"><div class="wrap top__in"><a class="logo" href="/">📖 [Brand Name] Reading</a><nav><a href="/lessons/">Lessons &amp; Pricing</a><a href="/about/">About</a><a href="/faq/">FAQ</a><a href="/contact/">Free Assessment</a></nav></div></header>
 <main>
 <section class="wrap narrow"><h1>Book a free reading assessment</h1>
-<p class="lead">Tell us a little about your child and Ms. [Name] will reach out within one business day to set up a 20-minute video call.</p>
+<p class="lead">Tell us a little about your child and Ms. Wilson will reach out within one business day to set up a 20-minute video call.</p>
 <form id="f" class="card form">
 <input type="hidden" name="access_key" value="5ceb6243-5913-4b6d-b541-09edfffa3434">
 <input type="hidden" name="subject" value="New reading assessment request">
@@ -24,13 +24,13 @@
 <option>Nextdoor</option><option>Outschool / tutoring site</option><option>Other</option></select></label>
 <button class="btn" type="submit">Request my free assessment</button>
 <p id="note" role="status" aria-live="polite"></p></form>
-<p class="small">Prefer email? <a href="mailto:[email@example.com]">[email@example.com]</a></p></section>
+</section>
 <script>
 document.getElementById('f').addEventListener('submit',async e=>{e.preventDefault();const f=e.target,n=document.getElementById('note'),b=f.querySelector('button');
 b.disabled=true;b.textContent='Sending...';try{const r=await(await fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(Object.fromEntries(new FormData(f)))})).json();
-if(!r.success)throw 0;n.textContent="Thank you! We'll be in touch within one business day.";f.reset();}catch(_){n.textContent='Something went wrong. Please email us instead.';}finally{b.disabled=false;b.textContent='Request my free assessment';}});
+if(!r.success)throw 0;n.textContent="Thank you! We'll be in touch within one business day.";f.reset();}catch(_){n.textContent='Something went wrong. Please try again in a minute.';}finally{b.disabled=false;b.textContent='Request my free assessment';}});
 </script>
 </main>
-<footer class="foot"><div class="wrap"><p><strong>[Brand Name] Reading</strong> · Private online reading lessons for ages 5–14 with Ms. [Name].</p>
-<p>Lessons by video call, Monday–Saturday, after-school and daytime slots. · <a href="mailto:[email@example.com]">[email@example.com]</a></p>
+<footer class="foot"><div class="wrap"><p><strong>[Brand Name] Reading</strong> · Private online reading lessons for ages 5–14 with Ms. Wilson.</p>
+<p>Lessons by video call, Monday–Saturday, after-school and daytime slots.</p>
 <p class="small">&copy; 2026 [Brand Name] Reading</p></div></footer></body></html>
