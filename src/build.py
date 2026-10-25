@@ -23,7 +23,7 @@ def page(slug, title, desc, body, schema=None):
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{E(title)}</title><meta name="description" content="{E(desc)}">
 <link rel="canonical" href="{url}"><meta property="og:title" content="{E(title)}">
-<meta property="og:description" content="{E(desc)}"><meta property="og:url" content="{url}">
+<meta property="og:description" content="{E(desc)}"><meta property="og:url" content="{url}"><meta property="og:image" content="{S["domain"]}/img/sherri.jpg">
 <meta name="theme-color" content="#2b4c7e"><link rel="stylesheet" href="/style.css">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📖</text></svg>">
 {ld}<script defer src="/_vercel/insights/script.js"></script></head><body>
@@ -37,13 +37,16 @@ def page(slug, title, desc, body, schema=None):
 CTA = '<a class="btn" href="/contact/">Book a free reading assessment</a>'
 
 HOME = f"""
-<section class="hero"><div class="wrap">
+<section class="hero"><div class="wrap hero__in">
+<picture><source srcset="/img/sherri.webp" type="image/webp"><img class="photo photo--hero" src="/img/sherri.jpg" width="640" height="800" alt="{E(S['teacher_full'])}, reading teacher" fetchpriority="high"></picture>
+<div>
 <p class="eyebrow">Private online reading lessons · ages 5–14</p>
 <h1>Help your child become a confident, happy reader.</h1>
 <p class="lead">One-on-one lessons by video call with {E(S["teacher_full"])}, a teacher with <strong>30+ years of experience</strong>.
 Every lesson plan is built around your child, not a script.</p>
 <p>{CTA} <a class="btn btn--ghost" href="/lessons/">See lessons &amp; pricing</a></p>
 <ul class="ticks"><li>EBLI-trained reading teacher</li><li>Bachelor's in Early Childhood Education, Auburn</li><li>30+ years as an educator</li><li>Experienced with dyslexic learners</li><li>Homeschool teacher</li></ul>
+</div>
 </div></section>
 
 <section class="wrap grid3">
@@ -87,7 +90,8 @@ LESSONS = f"""
 
 ABOUT = f"""
 <section class="wrap narrow"><h1>Meet {E(S["teacher_full"])}</h1>
-<p class="lead">{E(S["teacher"])} has spent more than 30 years helping children become confident readers — in the classroom, online, and at her own kitchen table homeschooling her kids. Every lesson is one-on-one and built around where your child is today.</p>
+<div class="intro"><picture><source srcset="/img/sherri.webp" type="image/webp"><img class="photo" src="/img/sherri.jpg" width="640" height="800" alt="{E(S['teacher_full'])}, reading teacher" loading="lazy"></picture>
+<p class="lead">{E(S["teacher"])} has spent more than 30 years helping children become confident readers — in the classroom, online, and at her own kitchen table homeschooling her kids. Every lesson is one-on-one and built around where your child is today.</p></div>
 <ul class="ticks ticks--col">
 <li>30+ years as an educator</li>
 <li>Bachelor's degree in Early Childhood Education from Auburn University</li>
@@ -142,7 +146,7 @@ if(!r.success)throw 0;n.textContent="Thank you! We'll be in touch within one bus
 """
 
 BIZ_LD = {"@context": "https://schema.org", "@type": "EducationalOrganization", "name": S["brand"], "url": S["domain"],
-          "description": "Private one-on-one online reading lessons for children ages 5-14.", "founder": {"@type": "Person", "name": S["teacher_full"]}}
+          "description": "Private one-on-one online reading lessons for children ages 5-14.", "image": S["domain"] + "/img/sherri.jpg", "founder": {"@type": "Person", "name": S["teacher_full"], "image": S["domain"] + "/img/sherri.jpg"}}
 
 PAGES = [
     ("index", f"Online Reading Tutor for Kids Ages 5–14 | {S['brand']}",
