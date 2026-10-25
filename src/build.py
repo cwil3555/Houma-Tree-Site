@@ -87,17 +87,14 @@ LESSONS = f"""
 
 ABOUT = f"""
 <section class="wrap narrow"><h1>Meet {E(S["teacher_full"])}</h1>
-<p class="lead">[Photo + 2–3 sentences in her own words: why she loves teaching kids to read.]</p>
+<p class="lead">{E(S["teacher"])} has spent more than 30 years helping children become confident readers — in the classroom, online, and at her own kitchen table homeschooling her kids. Every lesson is one-on-one and built around where your child is today.</p>
 <ul class="ticks ticks--col">
 <li>30+ years of teaching experience</li>
 <li>Bachelor's degree in Education</li>
 <li>5 years teaching ages 4–8 in a school classroom</li>
 <li>2 years as an online reading tutor with Hoot Reading</li>
 <li>Homeschooled and taught her own children</li>
-<li>[Additional certifications — to be added]</li>
 </ul>
-<h2>Results</h2>
-<p>[Short stories of students who moved up reading levels, e.g. "a second grader who went from guessing at words to reading chapter books in 5 months." First names or initials only, with parent permission.]</p>
 <p>{CTA}</p></section>
 """
 
@@ -108,7 +105,7 @@ FAQS = [
     ("Is the assessment really free?", "Yes. It's 20 minutes, there's no obligation, and you'll come away with a clear picture of your child's reading level either way."),
     ("Do you work with homeschool families?", f"Yes. {S['teacher']} has homeschooled and taught her own children and can be your reading curriculum or support the one you use."),
     ("How soon will we see progress?", "Most families notice more confidence within a few weeks. Measurable reading-level gains depend on the starting point and how often lessons happen. You'll get progress check-ins along the way."),
-    ("How do I pay?", "[Payment method, e.g. Venmo, Zelle, or invoice. Payment is due before each lesson or package.]"),
+    ("How do I pay?", "After your free assessment, {} will send simple payment details. Payment is due before each lesson or package.".format(S["teacher"])),
 ]
 FAQ = '<section class="wrap narrow"><h1>Frequently asked questions</h1>' + "".join(
     f"<details><summary>{E(q)}</summary><p>{E(a)}</p></details>" for q, a in FAQS) + f"<p>{CTA}</p></section>"
