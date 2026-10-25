@@ -1,10 +1,10 @@
 {
   "_comment": "Fill these in, then run: python3 src/build.py  (regenerates every page). Anything still in [brackets] shows up on the live site.",
-  "brand": "[Brand Name] Reading",
-  "teacher": "Ms. Wilson",
+  "brand": "Reading with Sherri",
+  "teacher": "Sherri",
   "teacher_full": "Sherri Wilson",
   "email": "",
-  "domain": "https://[yourdomain].com",
+  "domain": "https://readingwithsherri.com",
   "web3forms_key": "5ceb6243-5913-4b6d-b541-09edfffa3434",
   "booking_note": "Lessons by video call, Monday–Saturday, after-school and daytime slots.",
   "prices": {

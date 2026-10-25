@@ -29,7 +29,7 @@ def page(slug, title, desc, body, schema=None):
 {ld}<script defer src="/_vercel/insights/script.js"></script></head><body>
 <header class="top"><div class="wrap top__in"><a class="logo" href="/">📖 {E(S["brand"])}</a><nav>{nav}</nav></div></header>
 <main>{body}</main>
-<footer class="foot"><div class="wrap"><p><strong>{E(S["brand"])}</strong> · Private online reading lessons for ages 5–14 with {E(S["teacher"])}.</p>
+<footer class="foot"><div class="wrap"><p><strong>{E(S["brand"])}</strong> · Private online reading lessons for ages 5–14 with {E(S["teacher_full"])}.</p>
 <p>{E(S["booking_note"])}{mail}</p>
 <p class="small">&copy; 2026 {E(S["brand"])}</p></div></footer></body></html>"""
 
@@ -40,7 +40,7 @@ HOME = f"""
 <section class="hero"><div class="wrap">
 <p class="eyebrow">Private online reading lessons · ages 5–14</p>
 <h1>Help your child become a confident, happy reader.</h1>
-<p class="lead">One-on-one lessons by video call with {E(S["teacher"])}, a teacher with <strong>30+ years of experience</strong>.
+<p class="lead">One-on-one lessons by video call with {E(S["teacher_full"])}, a teacher with <strong>30+ years of experience</strong>.
 Every lesson plan is built around your child, not a script.</p>
 <p>{CTA} <a class="btn btn--ghost" href="/lessons/">See lessons &amp; pricing</a></p>
 <ul class="ticks"><li>Bachelor's in Education</li><li>30+ years teaching</li><li>Former Hoot Reading tutor</li><li>Homeschool teacher</li></ul>
