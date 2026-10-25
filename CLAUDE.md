@@ -63,15 +63,18 @@ sale — outreach drives students, the site converts them. Channels, fastest fir
   houmatreepros.com/* + www → 308 readingwithsherri.com/*.
 - Vercel Web Analytics ENABLED (Hobby, free). Script tag already in every page; it serves after the first
   deploy following enablement.
+- Google Search Console: Domain property sc-domain:readingwithsherri.com VERIFIED (DNS TXT rec_b84c1125006da1e349f05331
+  in Vercel DNS — do NOT delete it), sitemap.xml submitted (5 pages discovered), homepage indexing requested.
+- Google Business Profile: intentionally NOT created. Google's guidelines require a location customers visit or
+  traveling to customers; online-only businesses are ineligible and risk suspension. Revisit only if Sherri adds
+  in-person lessons (then: service-area profile, no public address).
 - No bracket placeholders remain: About intro + FAQ payment answer use neutral launch copy; the
   "additional certifications" bullet and the "Results" section were removed until real details exist.
 
 ## Next steps
 1. Fill real content in src/build.py ABOUT/FAQS: photo, bio in Sherri's words, certifications, a Results
    section with student stories (parent permission), actual payment method
-2. Google Search Console: add readingwithsherri.com (Domain property via Vercel DNS TXT), submit sitemap.xml
-3. Google Business Profile (service-area business, no public address)
-4. Draft outreach for Cole: past-family email, homeschool FB group post, Outschool listing, GBP listing
+2. Draft outreach for Cole: past-family email, homeschool FB group post, Outschool listing, GBP listing
 
 ## Gotchas learned
 - Cloud sessions have NO browser access to Cole's machine; GitHub/Vercel work goes through API connectors.
@@ -80,6 +83,7 @@ sale — outreach drives students, the site converts them. Channels, fastest fir
 - On Windows run the build as `PYTHONUTF8=1 python src/build.py` (the 📖 emoji crashes cp1252 otherwise).
 - Vercel MCP connector here is READ-ONLY for project settings (403 on domain writes) — use the dashboard via
   Claude in Chrome (Cole is logged in to Vercel in his Chrome; the Desktop built-in browser pane is not).
+- Vercel MCP connector CAN create DNS records (create_record worked) even though project-settings writes 403.
 - Vercel won't redirect a domain that another domain redirects to — repoint www.* first, then the apex.
 - Repo was renamed/moved to `cwil3555/Houma-Tree-Site` (capitalized); use that remote URL.
 
@@ -93,3 +97,5 @@ sale — outreach drives students, the site converts them. Channels, fastest fir
   redirect + analytics blocked on Vercel dashboard login.
 - **2026-10-25 (late)** — Connected readingwithsherri.com (+www 308), redirected houmatreepros.com (+www) to it,
   enabled Vercel Web Analytics (Hobby). Site fully live on the new domain.
+- **2026-10-25 (late)** — Search Console verified + sitemap submitted + homepage indexing requested. Skipped Google
+  Business Profile (online-only = ineligible per Google guidelines).
