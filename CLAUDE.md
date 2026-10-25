@@ -78,6 +78,8 @@ sale — outreach drives students, the site converts them. Channels, fastest fir
    section with student stories (parent permission), actual payment method
 2. Outreach drafts DONE → outreach/2026-10-25_outreach_drafts.md. Before sending: check Sherri's Hoot
    agreement for a non-solicitation clause; Cole + Sherri decide the referral reward; Sherri applies to Outschool.
+3. Marketplace comparison DONE → outreach/2026-10-25_platform_comparison.md. Verdict: Outschool = best 2nd channel
+   (apply now), Wyzant = add a profile later, Varsity Tutors = skip (assigned pay, no brand). Re-check at 60 days.
 
 ## Gotchas learned
 - Cloud sessions have NO browser access to Cole's machine; GitHub/Vercel work goes through API connectors.
@@ -104,3 +106,4 @@ sale — outreach drives students, the site converts them. Channels, fastest fir
   Business Profile (online-only = ineligible per Google guidelines).
 - **2026-10-25 (late)** — Wrote outreach drafts (past-family email/text, homeschool FB post, Outschool group +
   1-on-1 listings; Outschool = strictly on-platform). Added .vercelignore after finding CLAUDE.md/src publicly served.
+- **2026-10-25 (late)** — Compared Outschool / Wyzant / Varsity Tutors (fees, pricing control, off-platform rules).
