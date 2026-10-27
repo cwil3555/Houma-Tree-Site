@@ -1,0 +1,34 @@
+name: IndexNow ping
+# Sends every URL in the live sitemap to IndexNow (Bing, Yandex, Seznam, Naver; Bing feeds
+# DuckDuckGo/Yahoo). Runs after a push that changes the sitemap, or by hand from the Actions tab.
+on:
+  push:
+    branches: [main]
+    paths: ["sitemap.xml", "bcec75a49189e0cfc6dc6e1047fbb0fd.txt", ".github/workflows/indexnow.yml"]
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    env:
+      HOST: readingwithsherri.com
+      KEY: bcec75a49189e0cfc6dc6e1047fbb0fd
+    steps:
+      - name: Wait for the Vercel deploy to serve the key file
+        run: |
+          for i in $(seq 1 30); do
+            body=$(curl -fsS "https://$HOST/$KEY.txt" || true)
+            if [ "$body" = "$KEY" ]; then echo "key file live"; exit 0; fi
+            sleep 10
+          done
+          echo "key file not live after 5 minutes"; exit 1
+      - name: Submit sitemap URLs to IndexNow
+        run: |
+          sleep 20  # let the sitemap from the same deploy settle
+          urls=$(curl -fsS "https://$HOST/sitemap.xml" | grep -o '<loc>[^<]*</loc>' | sed 's/<[^>]*>//g')
+          echo "$urls"
+          body=$(URLS="$urls" python3 -c 'import json,os; h=os.environ["HOST"]; k=os.environ["KEY"]; print(json.dumps({"host":h,"key":k,"keyLocation":"https://"+h+"/"+k+".txt","urlList":os.environ["URLS"].split()}))')
+          code=$(curl -sS -o resp.txt -w '%{http_code}' -X POST https://api.indexnow.org/indexnow \
+            -H 'Content-Type: application/json; charset=utf-8' -d "$body")
+          echo "IndexNow HTTP $code"; cat resp.txt; echo
+          [ "$code" = "200" ] || [ "$code" = "202" ]

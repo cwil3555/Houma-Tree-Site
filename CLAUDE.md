@@ -57,6 +57,9 @@ schedule + get reviews, then raise ~$10 once there's a waitlist.
 - Local preview: `python -m http.server 4180 -d .` (Desktop launch.json config `reading-site` in the sweepmate repo).
 - Old tree URLs 301 to the new pages (vercel.json redirects).
 - Vercel Web Analytics script tag is on every page (needs enabling in the Vercel dashboard).
+- IndexNow (Bing, feeds DuckDuckGo/Yahoo): key file `bcec75a49189e0cfc6dc6e1047fbb0fd.txt` at the root (keep it).
+  `.github/workflows/indexnow.yml` pings every sitemap URL after a push that changes sitemap.xml, or by hand
+  (Actions tab > IndexNow ping > Run workflow). No Bing Webmaster account; Cole chose not to use one.
 - Form asks "How did you hear about us?" — this is the channel-attribution data for lead-gen.
 
 ## Strategy (agreed plan)
@@ -81,6 +84,9 @@ sale — outreach drives students, the site converts them. Channels, fastest fir
   in-person lessons (then: service-area profile, no public address).
 - No bracket placeholders remain: About intro + FAQ payment answer use neutral launch copy; the
   "additional certifications" bullet and the "Results" section were removed until real details exist.
+
+- 2026-10-27: PR #3 (5 topic pages, richer schema, sitemap lastmod) merged; sitemap now 10 URLs. Google already has
+  the sitemap (no resubmit needed). Bing gets pages via IndexNow.
 
 ## Next steps
 1. Fill real content in src/build.py ABOUT/FAQS: bio in Sherri's words, a Results
@@ -121,3 +127,5 @@ sale — outreach drives students, the site converts them. Channels, fastest fir
 - **2026-10-25 (late)** — Added Sherri's photo (home hero, About, og:image, schema); previewed desktop + mobile locally before push.
 - **2026-10-25 (late)** — SEO pass: 5 topic pages (dyslexia, phonics, comprehension, homeschool, EBLI), keyword H1 on home,
   richer schema, footer + card internal links, sitemap lastmod, 404 noindex.
+- **2026-10-27** — Merged PR #3 (topic pages live, sitemap 10 URLs). Added IndexNow key file + GitHub Actions ping
+  workflow so Bing gets every sitemap URL without a Bing account.
