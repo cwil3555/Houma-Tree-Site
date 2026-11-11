@@ -88,6 +88,14 @@ sale — outreach drives students, the site converts them. Channels, fastest fir
 - 2026-10-27: PR #3 (5 topic pages, richer schema, sitemap lastmod) merged; sitemap now 10 URLs. Google already has
   the sitemap (no resubmit needed). Bing gets pages via IndexNow.
 
+## Performance check (2026-11-11)
+- Vercel Analytics, last 30d: 94 visitors / 147 views / 82% bounce. Spike Oct 25-27 = launch (mostly us/family/bots);
+  since ~Nov 1 only ~1-3 visitors/day. /contact 3 visitors. Referrers: google 2, vercel 2 -- NO facebook/email/text referrers,
+  i.e. no outreach has gone out yet. Vercel MCP analytics API 404s on Hobby -- read the dashboard via Claude in Chrome.
+- Search Console, 28d: 60 impressions, 1 click, avg position 46.8. Queries: reading comprehension tutoring online (27),
+  phonics tutor online (10), online phonics tutor (6).
+- Leads: ZERO real form submissions (only the 10/25 test).
+
 ## Next steps
 1. Fill real content in src/build.py ABOUT/FAQS: bio in Sherri's words, a Results
    section with student stories (parent permission), actual payment method
@@ -129,3 +137,4 @@ sale — outreach drives students, the site converts them. Channels, fastest fir
   richer schema, footer + card internal links, sitemap lastmod, 404 noindex.
 - **2026-10-27** — Merged PR #3 (topic pages live, sitemap 10 URLs). Added IndexNow key file + GitHub Actions ping
   workflow so Bing gets every sitemap URL without a Bing account.
+- **2026-11-11** — Performance check: ~94 visitors/30d, 0 real leads, Google page ~5. Outreach not yet sent = the bottleneck.
